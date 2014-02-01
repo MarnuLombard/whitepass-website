@@ -39,7 +39,7 @@
       border: 2px solid $color-primary_Xdark;
     }
   }
-  @include e(black) {
+  @include e(unquote("black")) {
     background-color: #121212 !important;
     border: 2px solid $color-grey_Xdark !important;
   }

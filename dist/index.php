@@ -32,10 +32,10 @@
 				Cosmetics &amp; Beauty
 			</div>
 			<div class="modular__item">
-				Health &amp; Welness
+				Health &amp; Wellness
 			</div>
 			<div class="modular__item">
-				Entertinment &amp; Adventure
+				Entertainment &amp; Adventure
 			</div>
 		</div>
 
@@ -69,8 +69,8 @@
 
   <section class="grid text--center mt75">
   	<div class="grid__item two-thirds">
-  		<h4>Contact Victor Mhlanga:</h4>
-  		<?= hidemail('victor@whitepass.co.za') ?>
+  		<h4>Contact:</h4>
+  		<?= hidemail('info@whitepass.co.za') ?>
   	</div>
   </section>
 
