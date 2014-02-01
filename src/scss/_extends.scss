@@ -1,0 +1,37 @@
+%center {
+	float: none !important;
+  display: block !important; // So as to reset grid-levels' inline-block
+	margin-right: auto !important;
+	margin-left: auto !important;
+}
+
+%screenreader {
+	font: #{0/0} a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+
+
+
+// Legacy Clearfix
+// For when you need full Legacy support, including old IE and old Firefox
+// From http://www.css-101.org/articles/clearfix/latest-new-clearfix-so-far.php
+%clearfix-legacy {
+  @include clearfix(false, 'legacy');
+}
+
+// Micro Clearfix
+// For when you need old IE support, but not concerned with old Firefox
+// From http://nicolasgallagher.com/better-float-containment-in-ie/
+%clearfix-micro {
+  @include clearfix(false, 'micro');
+}
+
+// Modern Clearfix
+// Clearfix for modern browsers, especiall when using border-box
+// From http://www.css-101.org/articles/clearfix/latest-new-clearfix-so-far.php
+%clearfix {
+  @include clearfix(false, 'modern');
+}

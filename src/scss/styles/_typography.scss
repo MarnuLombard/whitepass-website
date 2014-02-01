@@ -1,0 +1,49 @@
+/* ---------------- */
+/* 	Import fonts		*/
+/* ---------------- */
+
+@include font-face(Cambo-Regular);
+@include font-face($font-icons);
+
+
+/* ---------------- */
+/* 	  Set styles		*/
+/* ---------------- */
+
+body {
+	font-family: $font-body;
+	color: white;
+	font-style: normal;
+}// body
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: $font-headings;
+	color: $color-headings;
+	font-style: normal;
+}
+
+
+// There might be a better way to write this- but it works
+h1+h2, h2+h3, h3+h4 h4+h5, h5+h6{
+	margin-top: 0;
+}
+
+
+//I've broken it into two parts
+//so as to reduce the specificity of the rule
+a {
+	color: white;
+}
+a:visited {
+	color: white;
+}
+
+.text--center { text-align: center; }
+.text--left   { text-align: left;   }
+.text--right  { text-align: right;  }
